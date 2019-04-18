@@ -1,9 +1,17 @@
 package com.example.brom.activitiesapp;
 
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
+
+    //private static final android.util.Log Log = ;
     private String[] mountainNames = {"Matterhorn","Mont Blanc","Denali"};
     private String[] mountainLocations = {"Alps","Alps","Alaska"};
     private int[] mountainHeights ={4478,4808,6190};
@@ -13,7 +21,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
+        Log.d("brom", "onCreate() called.");
+        //Button b = (Button) findViewById(R.id.startaDetaljer);
+        //b.setText("Starta Detaljer");
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener(){
+            @Override
+             public void onClick(View view) {
+                Snackbar.make(view, "Replace with you own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+    }
+
+    @Override
+    protected void onStop() {
+
+        super.onStop();
+        Log.d("brom","onStop() called.");
+    }
         // 1. Create a ListView as in previous assignment
         // 2. Create a new activity named "MountainDetailsActivity
         // 3. Create a new Layout file for the MountainDetailsActivity called
@@ -34,4 +63,4 @@ public class MainActivity extends AppCompatActivity {
         //    left arro button. This is done by letting the MainActivity be the parent activity to
         //    MountainDetailsActivity.
     }
-}
+
