@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -52,9 +53,11 @@ public class MainActivity extends AppCompatActivity {
         my_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Toast.makeText(getApplicationContext(), waqarsBerg.get(position).info(), Toast.LENGTH_SHORT).show();
+               /* Toast.makeText(getApplicationContext(), waqarsBerg.get(position).info(), Toast.LENGTH_SHORT).show();*/
                 Intent intent = new Intent(getApplicationContext(), detaljer.class);
+                intent.putExtra("BERG_NAMN", waqarsBerg.get(position).toString());
                 startActivity(intent);
+
             }
         });
    /* public void launchSecondActivity(View view) {
