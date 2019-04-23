@@ -42,9 +42,39 @@ public class Mountain {
         return name;
     }
 
+
+
+
+
+
+    public void setlocation(String l) {
+        location = l;
+    }
+
+    public String getlocation() {
+        return location;
+    }
+
+
+
+
+
+
+    public void setheight(int h) {
+        height = h;
+    }
+
+    public int getheight() {
+        return height;
+    }
+
+
+
     @Override
     public String toString(){
         return name;
     }
+
+
 }
 

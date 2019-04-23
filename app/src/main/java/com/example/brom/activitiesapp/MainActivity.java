@@ -55,7 +55,9 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                /* Toast.makeText(getApplicationContext(), waqarsBerg.get(position).info(), Toast.LENGTH_SHORT).show();*/
                 Intent intent = new Intent(getApplicationContext(), detaljer.class);
-                intent.putExtra("BERG_NAMN", waqarsBerg.get(position).toString());
+                //intent.putExtra("BERG_NAMN" , waqarsBerg.get(position).toString());
+                //intent.putExtra( "BERG_HEIGHT", waqarsBerg.get(position).getheight());
+               // intent.putExtra( "BERG_LOCATION", waqarsBerg.get(position).getlocation());
                 startActivity(intent);
 
             }

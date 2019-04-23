@@ -20,18 +20,19 @@ public class detaljer extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra("BERG_NAMN");
-        Log.d("WAQAR", "Fick följande från main activity: "+message);
-        TextView textView = findViewById(R.id.textFromMain);
-        textView.setText(message);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        //String name = intent.getStringExtra("BERG_NAMN" );
+        //String height = intent.getStringExtra("BERG_HEIGHT" );
+        //String location = intent.getStringExtra("BERG_LOCATION" );
+        //Log.d("WAQAR", "Fick följande från main activity: "+name);
+        //Log.d("WAQAR", "Fick följande från main activity: "+location);
+        //TextView textView = findViewById(R.id.textFromMain);
+        //TextView textView1 = findViewById(R.id.mountainHeight);
+        //TextView textView2 = findViewById(R.id.mountainLocation);
+        //textView.setText(name);
+        //textView1.setText(height);
+       // textView2.setText(location);
+
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
