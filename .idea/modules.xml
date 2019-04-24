@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ActivitiesAppl.iml" filepath="$PROJECT_DIR$/ActivitiesAppl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ActivitiesApple.iml" filepath="$PROJECT_DIR$/ActivitiesApple.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
